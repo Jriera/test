@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sliding Header Grid Layout</title>
+<meta name="description" content="A simple grid layout with an initial fullscreen intro" />
+<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+<meta name="author" content="Codrops" />
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,500" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/layout-simple.css" />
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+</head>
+<body>
+<div id="contenedor" class="contenedor">
+  <header class="intro"> <img class="intro__image" src="img/AS_future_mod2.JPG" alt="future matrix"/>
+    <div class="intro__content"> 
+      <!--<h1 class="intro__title">robotignite Academy</h1>--> 
+      <img id="logo" class="logo" src="file:///C:/Users/lenovo/Documents/Web%20Design%20Templates/images/robotigniteLogo_mod.PNG" alt="">
+      <div class="intro__subtitle">
+        <div class="intro__description"> Learn essential skills of Robotics Programming to advance your career. </div>
+        <button class="trigger" onClick="logoResize()">
+        <svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+          <g class="icon icon--grid">
+            <rect x="32.5" y="5.5" width="22" height="22"/>
+            <rect x="4.5" y="5.5" width="22" height="22"/>
+            <rect x="32.5" y="33.5" width="22" height="22"/>
+            <rect x="4.5" y="33.5" width="22" height="22"/>
+          </g>
+          <g class="icon icon--cross">
+            <line x1="4.5" y1="55.5" x2="54.953" y2="5.046"/>
+            <line x1="54.953" y1="55.5" x2="4.5" y2="5.047"/>
+          </g>
+        </svg>
+        <span>View content</span> </button>
+      </div>
+    </div>
+    <!-- /intro__content --> 
+  </header>
+  <!-- /intro -->
+  <section class="items-wrap"> <a href="javascript:void(0)" class="item js-nav" > <img onClick="toggleVisibility()" class="item__image" src="file:///C:/Users/lenovo/Documents/Ignite%20Academy/img/structure.png" alt="item01"/>
+    <h2 class="item__title">Structure</h2>
+    </a> 
+    
+    
+    
+    <a href="#" class="item"> <img class="item__image" src="file:///C:/Users/lenovo/Documents/Ignite%20Academy/img/perception.png" alt="item02"/>
+    <h2 class="item__title">Perception</h2>
+    </a> 
+    
+    <a href="#" class="item"> <img class="item__image" src="file:///C:/Users/lenovo/Documents/Ignite%20Academy/img/navigation.png" alt="item03"/>
+    <h2 class="item__title">Navigation</h2>
+    </a> 
+    
+    <a href="#" class="item"> <img class="item__image" src="file:///C:/Users/lenovo/Documents/Ignite%20Academy/img/manipulation.png" alt="item04"/>
+    <h2 class="item__title">Handling</h2>
+    </a>  
+    
+    </section>
+    <section id="panelHolder" class="disabled"><section id="panel" >
+    	<div class="wrapper"><div class="heading"><h4>meeting ROS</h4></div>
+    	<div class="contentPanel"><p>El objetivo de este curso es darte las herramientas básicas y conocimientos para poder entender y crear cualquier proyecto básico relacionado con ROS.</p></div></div>
+  		
+    </section></section>
+ <section > <div class="footer-main">
+    <div class="parent">
+      <div class=" footer-info"> <img class="footer-logo" src="file:///C:/Users/lenovo/Documents/Web%20Design%20Templates/images/robotigniteLogo_mod.PNG" alt="">
+        <p> Robot Ignite Academy es un producto desarrollado por The Construct, una compañía especializada en crear simulaciones robótica en la web. </p>
+      </div>
+      <!-- /footer-info -->
+      <div class=" site-links">
+        <ul>
+          <li>
+            <h4>Empresa</h4>
+          </li>
+          <li><a href="http://www.theconstructsim.com/">Sobre Nosotros</a></li>
+          <li><a href="http://www.theconstructsim.com/our-team-2/">Equipo</a></li>
+          <li><a href="http://www.theconstructsim.com/blog/">Blog</a></li>
+          <li><a href="http://www.theconstructsim.com/forums/forum/robot-ignite-academy-forum/">Ayuda</a></li>
+        </ul>
+      </div>
+      <!-- /site-links -->
+      <div class=" social-links">
+        <ul>
+          <li>
+            <h4>Social</h4>
+          </li>
+          <li><a href="https://twitter.com/_theconstruct_">Twitter</a></li>
+          <li><a href="https://www.facebook.com/theconstructsim">Facebook</a></li>
+          <li><a href="https://www.youtube.com/channel/UCt6Lag-vv25fTX3e11mVY1Q">YouTube</a></li>
+          <li><a href="https://plus.google.com/111727708404707114239">Google+</a></li>
+          <li><a href="http://es.linkedin.com/company/the-construct">Linkedin</a></li>
+        </ul>
+      </div>
+      <!-- /social -->
+      <div class="footer-subscribe">
+        <ul class="contact">
+          <li>
+            <h4 class="contact-us-ft">CONTACTO</h4>
+          </li>
+          <li>
+            <p>+34 687 672 123</p>
+          </li>
+          <li><a href="http://maps.google.com/?q=Gran Via de les Corts Catalanes 608, Barcelona, Spain">Gran Via de les Corts Catalanes, Barcelona, Spain</a> </li>
+          <li><i class="pe-7s-mail"></i> <a href="mailto:courses@robotigniteacademy.com?Subject=about%20ignite" target="_top">courses@robotigniteacademy.com</a></li>
+        </ul>
+      </div>
+      <!-- /subscribe --> 
+    </div>
+    <!-- /row --> 
+  </div>
+  <!-- /footer -->
+  <div class="copyright"> <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2017 - The Construct</p> </div></section>
+</div>
+<!-- /contenedor --> 
+<script src="js/classie.js"></script> 
+<script>
+			(function() {
+				var contenedor = document.getElementById( 'contenedor' ),
+					trigger = contenedor.querySelector( 'button.trigger' );
+
+				function toggleContent() {
+					if( classie.has( contenedor, 'contenedor--open' ) ) {
+						classie.remove( contenedor, 'contenedor--open' );
+						classie.remove( trigger, 'trigger--active' );
+						window.addEventListener( 'scroll', noscroll );
+					}
+					else {
+						classie.add( contenedor, 'contenedor--open' );
+						classie.add( trigger, 'trigger--active' );
+						window.removeEventListener( 'scroll', noscroll );
+					}
+				}
+
+				function noscroll() {
+					window.scrollTo( 0, 0 );
+				}
+
+				// reset scrolling position
+				document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+				// disable scrolling
+				window.addEventListener( 'scroll', noscroll );
+
+				trigger.addEventListener( 'click', toggleContent );
+
+				// For Demo purposes only (prevent jump on click)
+				[].slice.call( document.querySelectorAll('.items-wrap a') ).forEach( function(el) { el.onclick = function() { return false; } } );
+			})();
+	
+			
+		</script>
+		<script src="js/resizer.js"></script>
+		<script src="js/activate.js"></script>
+</body>
+
+</html>
